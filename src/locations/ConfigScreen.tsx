@@ -49,10 +49,8 @@ const ConfigScreen = () => {
                 <TextInput
                     id="inputWidth"
                     type="number"
-                    value={parameters.inputWidth}
+                    value={String(parameters.inputWidth)}
                     onChange={e => setParameters({...parameters, inputWidth: Number(e.target.value)})}
-                    label="Input Width"
-                    description="Set the width of the input field"
                     isRequired
                 />
                 <br/>
